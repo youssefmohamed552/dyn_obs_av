@@ -1,0 +1,9 @@
+<launch>
+	<node name="mapper_node" pkg="mapper" type="mapper_node"/>
+	<node name="gui_node" pkg="gui" type="gui_node"/>
+	<node name="rrt_path_planner_node" pkg="path_planner" type="rrt_path_planner_node"/>
+	<node name="obstacles_publisher_node" pkg="sim" type="obstacle_publisher_node"/>
+	<node name="drive_to_point_node" pkg="pfc" type="pfc_node"/>
+	<!--node name="sim_go" pkg="sim" type="sim_go"/-->
+	<node name="executive_node" pkg="executive" type="executive_node"/>
+</launch>

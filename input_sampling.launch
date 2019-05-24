@@ -1,0 +1,9 @@
+<launch>
+	<node name="mapper_node" pkg="mapper" type="mapper_node"/>
+	<node name="pfc_node" pkg="pfc" type="pfc_node"/>	
+	<node name="gui_node" pkg="gui" type="gui_node"/>
+	<node pkg="depthimage_to_laserscan" type="depthimage_to_laserscan" name="depthimage_to_laserscan"/>
+	<node name="tcl_node" pkg="tcl" type="tcl_node"/>
+	<node name="path_publisher_node" pkg="path_planner" type="path_publisher_node"/>
+	<node name="obstacles_publisher_node" pkg="sim" type="obstacle_publisher_node"/>
+</launch>
